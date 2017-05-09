@@ -1,0 +1,22 @@
+{% extends 'blog/base1.html' %}
+{% load staticfiles %}
+					    {% block main %}
+						<h1 class="page-title">About Me</h1>
+						<article class="post">
+							<div class="entry-content clearfix">
+								<figure class="img-responsive-center">
+									<img class="img-responsive" src="{% static 'blog/image/me.jpg' %}" alt="Developer Image">
+								</figure>
+								<p>这是初学django创建的一个简单blog网站，能够实现blog网站的基本功能，例如读、写博客，博客分类，导航，评论。</p>
+								<p>一些功能还需继续完善，敬请期待！</p>
+								<div class="height-40px"></div>
+								<h2 class="title text-center">Social</h2>
+								<ul class="social">
+									<li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
+									<li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
+									<li class="google-plus"><a href="#"><span class="ion-social-googleplus"></span></a></li>
+									<li class="tumblr"><a href="#"><span class="ion-social-tumblr"></span></a></li>
+								</ul>
+							</div>
+						</article>
+					    {% endblock main %}
